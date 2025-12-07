@@ -1,0 +1,232 @@
+\documentclass{beamer}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[english, russian]{babel}
+
+\title{Исследование подходов к мутационному тестированию}
+\author{Гамов Игорь Александрович}
+\institute{СПбПУ, ИКНТ ВШ ПИ}
+\date{2024}
+\begin{document}
+\begin{frame}[plain]
+\maketitle
+\small
+\begin{tabular}[t]{@{}l@{\hspace{1pt}}p{.56\textwidth}@{}}
+\qquad \qquad \qquad \qquad \qquad \qquad Выполнил студент группы 5140903/40401: \\
+\qquad \qquad \qquad \qquad \qquad \qquad Гамов Игорь Александрович
+\end{tabular}%
+
+\begin{tabular}[t]{@{}l@{\hspace{1pt}}p{.32\textwidth}@{}}
+\\
+\qquad \qquad \qquad \qquad \qquad \qquad Руководитель:\\
+\qquad \qquad \qquad \qquad \qquad \qquad Старший преподаватель В. А. Пархоменко
+\end{tabular}%
+\end{frame}
+
+
+
+\begin{frame}{Актуальность и новизна}
+
+Тестирование в наше время стало неотъемлемой частью разработки программного обеспечения. В наиболее сложных проектах соотношение тестировщиков и разработчиков может составлять 1:1. В таких условиях важно уметь оценивать качество написанных тестов. Наиболее известный инструмент для этого -- это оценка покрытия кода, однако данный инструмент плохо позволяет оценить именно качество тестов. Для такой задачи было придумано мутационное тестирование. Идея состоит в том, чтобы преобразовывать часть программного кода, покрытую тестами и проверять, выявили ли уже написанные тесты ошибку из-за изменения (мутации). У данного подхода имеется множество проблем, являющихся предметом современной научной дискуссии, как например, выявление мутаций, не изменяющих поведение программы. 
+
+
+
+\end{frame}
+
+
+
+
+
+\begin{frame}{Ученые (1/2)}
+
+	\begin{itemize}
+		\item \textbf{Mike Papadakis}
+        
+        Основные области исследования: мутационное тестирование, искусственный интеллект, программное обеспечение и машинное обучение. Исследование включает в себя такие дисциплины, как модульное тестирование и тестирование «белого ящика».
+
+        \item \textbf{Gordon Fraser}
+
+        Занимается исследованиями в области модульного тестирования и покрытия кода. Его исследования модульного тестирования включают изучение проблем, связанных с Java, поисковыми системами и регрессионным тестированием.
+        
+        
+  \end{itemize}
+  
+\end{frame} 
+
+\begin{frame}{Ученые (2/2)}
+
+	\begin{itemize}
+        
+        \item \textbf{Lingming Zhang}
+
+        Исследует возможности автоматизированного восстановления программ, модульного тестирования, мутационного тестирования, оценки покрытия кода. Также изучает возможности применения различных методов машинного обучения, больших языковых моделей в этих областях  
+        
+        \item \textbf{Darko Marinov}
+
+        В основном занимается изучением вопросов, связанных с Java, разработкой и тестированием ПО. Также занимается вопросами, связанными с программной инженерией, покрытием кода, модульным тестированием.
+        
+        \item \textbf{Alex Groce}
+
+        Основные исследования касаются проверки моделей, теоретической информатики и анализа исходного кода. Его работа посвящена таким темам, как формальная верификация и тестирование «белого ящика».
+        
+  \end{itemize}
+  
+\end{frame} 
+
+
+\begin{frame}{Список источников (1/5)}
+
+
+
+	\begin{itemize}
+		\item \textbf{Reducing Manual Efforts in Equivalence Analysis in Mutation Testing.}
+
+        Amorim, S., Fernandes, L., Ribeiro, M., Gheyi, R., Delamaro, M., Guimarães, M. and Santos, A. (2024). 
+        
+        https://doi.org/10.5753/jserd.2024.3588
+        \item \textbf{Mutation Testing in Practice: Insights From Open-Source Software Developers.}
+
+        A. B. Sánchez, J. A. Parejo, S. Segura, A. Durán and M. Papadakis (2024)
+        
+        https://doi.org/10.1109/tse.2024.3377378
+        \item \textbf{Contextual Predictive Mutation Testing.} 
+        
+        Kush Jain, Uri Alon, Alex Groce, and Claire Le Goues (2023) 
+        
+        https://doi.org/10.1145/3611643.3616289
+  \end{itemize}
+  
+\end{frame} 
+\begin{frame}{Список источников (2/5)}
+
+
+
+	\begin{itemize}
+		\item \textbf{Regression mutation testing.} 
+        
+        Lingming Zhang, Darko Marinov, Lu Zhang, and Sarfraz Khurshid (2012)
+        
+        https://doi.org/10.1145/2338965.2336793
+        
+        \item \textbf{An extensible, regular-expression-based tool for multi-language mutant generation.}
+
+        Alex Groce, Josie Holmes, Darko Marinov, August Shi, and Lingming Zhang (2018)
+        
+        https://doi.org/10.1145/3183440.3183485
+
+        \item \textbf{Predictive mutation testing.}
+        
+        Jie Zhang, Ziyi Wang, Lingming Zhang, Dan Hao, Lei Zang, Shiyang Cheng, and Lu Zhang (2016)
+        
+        https://doi.org/10.1145/2931037.2931038
+  \end{itemize}
+  
+\end{frame} 
+\begin{frame}{Список источников (3/5)}
+
+
+
+	\begin{itemize}
+		\item \textbf{Selective mutation testing for concurrent code.}
+
+        Milos Gligoric, Lingming Zhang, Cristiano Pereira, and Gilles Pokam (2013)
+        
+        https://doi.org/10.1145/2483760.2483773
+        
+        \item \textbf{FRAFOL: FRAmework FOr Learning mutation testing.}
+        
+        Pedro Tavares, Ana Paiva, Domenico Amalfitano, and René Just (2024)
+        
+        https://doi.org/10.1145/3650212.3685306
+
+        \item \textbf{An Empirical Study on How Large Language Models Impact Software Testing Learning.}
+
+        Simone Mezzaro, Alessio Gambi, and Gordon Fraser (2024)
+        
+        https://doi.org/10.1145/3661167.3661273
+  \end{itemize}
+  
+\end{frame} 
+\begin{frame}{Список источников (4/5)}
+
+
+
+	\begin{itemize}
+		\item \textbf{A practical system for mutation testing: help for the common programmer.}
+        
+        A. J. Offutt (1994)
+        
+        https://doi.ieeecomputersociety.org/10.1109/TEST.1994.528535
+        
+        \item \textbf{Weak Mutation Testing and Completeness of Test Sets.}
+
+        W. E. Howden (1992)
+        
+        https://doi.ieeecomputersociety.org/10.1109/TSE.1982.235571
+
+        \item \textbf{Mutation Testing of Java Bytecode: A Model-Driven Approach.}
+        
+        Christoph Bockisch, Deniz Eren, Sascha Lehmann, Daniel Neufeld, and Gabriele Taentzer (2024)
+        
+        https://doi.org/10.1145/3640310.3674103
+        
+  \end{itemize}
+  
+\end{frame} 
+\begin{frame}{Список источников (5/5)}
+
+
+
+	\begin{itemize}
+		\item \textbf{Descartes: a PITest engine to detect pseudo-tested methods: tool demonstration.}
+
+        Oscar Luis Vera-Pérez, Martin Monperrus, and Benoit Baudry (2018)
+        
+        https://doi.org/10.1145/3238147.3240474
+        
+        \item \textbf{Mutation testing of unsupervised learning systems.}
+
+        Yuteng Lu, Kaicheng Shao, Jia Zhao, Weidi Sun, Meng Sun (2024)
+
+        https://doi.org/10.1016/j.sysarc.2023.103050
+
+        \item \textbf{Mutation-driven generation of unit tests and oracles.}
+        
+        Gordon Fraser and Andreas Zeller (2010)
+        
+        https://doi.org/10.1145/1831708.1831728
+        
+  \end{itemize}
+  
+\end{frame} 
+\begin{frame}{Стратегия поиска (1/2)}
+
+Для поиска источников были использованы следующие системы:  
+\begin{itemize}
+    \item crossref 
+    \item dblp
+    \item dl acm
+    \item ieeexplore
+\end{itemize}
+
+  
+\end{frame} 
+\begin{frame}{Стратегия поиска (2/2)}
+При поиске были использованы ключевые слова:
+\begin{itemize}
+
+    \item Mutation testing
+    \item Weak mutation 
+    \item PITest.
+\end{itemize}
+
+Также при добавлении операторов И/ИЛИ были использованы ключевые слова:
+  
+\begin{itemize}
+    \item Framework
+    \item Java 
+    \item Artificial intelligence.
+    \item LLM
+\end{itemize}
+\end{frame} 
+
+\end{document}
