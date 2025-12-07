@@ -27,86 +27,27 @@
 %mailto with subject (impossible with href)
 %mailto anybody without email body
 \makeatletter
-\newcommand\mailtoab[3]{%                %\newcommand\tpj@compose@mailto[3]{%
-	\edef\@tempa{mailto:#1?subject=#2 }%
-	\edef\@tempb{\expandafter\html@spaces\@tempa\@empty}%
-	\href{\@tempb}{#3}}
-\catcode\%=11
-\def\html@spaces#1 #2{#1%20\ifx#2\@empty\else\expandafter\html@spaces\fi#2}
-	\catcode\%=14
-	\makeatother
+\newcommand\mailtoab[3]{\href{mailto:#1?subject=#2}{#3}}
+\makeatother
 	
 	
 	%${email}{Subject}{email start body}{text in pdf}
-	\makeatletter
-	\newcommand\mailto[4]{%                %\newcommand\tpj@compose@mailto[3]{%
-		\edef\@tempa{mailto:#1?subject=#2\&body=#3 }%
-		\edef\@tempb{\expandafter\html@spaces\@tempa\@empty}%
-		\href{\@tempb}{#4}}
-	%% with %20 instead of spaces
-	%\catcode\%=11
-	%\def\html@spaces#1 #2{#1%20\ifx#2\@empty\else\expandafter\html@spaces\fi#2}
-	%\catcode\%=14
-	\makeatother
-	
-	%% MLABSED 2017 author
-	%%${email}{Subject}{email start body}{text in pdf}
-	\makeatletter
-	\newcommand\mailtoMLABSEDauthor[3]{%                
-		\edef\@tempa{mailto:#1?subject=MLABSED 2017\&body=#2 }%
-		\edef\@tempb{\expandafter\html@spaces\@tempa\@empty}%
-		\href{\@tempb}{#3}}
-	%% with %20 instead of spaces
-	%\catcode\%=11
-	%\def\html@spaces#1 #2{#1%20\ifx#2\@empty\else\expandafter\html@spaces\fi#2}
-	%\catcode\%=14
-	\makeatother
-	
-	
-	%%Vladimir Parkhomenko
-	\makeatletter
-	\newcommand\mailtopa[1]{%                %\newcommand\tpj@compose@mailto[3]{%
-		\edef\@tempa{mailto:parhomenko.v@gmail.com?subject=#1\&body=Dear Vladimir, }%
-		\edef\@tempb{\expandafter\html@spaces\@tempa\@empty}%
-		\href{\@tempb}{Vladimir.Parkhomenko@spbstu.ru}}
-	\catcode\%=11
-	\def\html@spaces#1 #2{#1%20\ifx#2\@empty\else\expandafter\html@spaces\fi#2}
-		\catcode\%=14
-		\makeatother
-		
-		%%Alexey Buzmakov
-		\makeatletter
-		\newcommand\mailtobu[1]{%                %\newcommand\tpj@compose@mailto[3]{%
-			\edef\@tempa{mailto:abuzmakov@gmail.com?subject=#1\&body=Dear Alexey, }%
-			\edef\@tempb{\expandafter\html@spaces\@tempa\@empty}%
-			\href{\@tempb}{abuzmakov@gmail.com}}
-		\catcode\%=11
-		\def\html@spaces#1 #2{#1%20\ifx#2\@empty\else\expandafter\html@spaces\fi#2}
-			\catcode\%=14
-			\makeatother
-			
-			%%Xenia Naidenova
-			\makeatletter
-			\newcommand\mailtona[1]{%                %\newcommand\tpj@compose@mailto[3]{%
-				\edef\@tempa{mailto:ksennaidd@gmail.com?subject=#1\&body=Dear Xenia, }%
-				\edef\@tempb{\expandafter\html@spaces\@tempa\@empty}%
-				\href{\@tempb}{ksennaidd@gmail.com}}
-			\catcode\%=11
-			\def\html@spaces#1 #2{#1%20\ifx#2\@empty\else\expandafter\html@spaces\fi#2}
-				\catcode\%=14
-				\makeatother
-				
-				
-				%%Konstantin Shvetsov
-				\makeatletter
-				\newcommand\mailtosh[1]{%                %\newcommand\tpj@compose@mailto[3]{%
-					\edef\@tempa{mailto:shvetsov@inbox.ru?subject=#1\&body=Dear Konstantin, }%
-					\edef\@tempb{\expandafter\html@spaces\@tempa\@empty}%
-					\href{\@tempb}{Konstantin.Shvetsov@spbstu.ru}}
-				\catcode\%=11
-				\def\html@spaces#1 #2{#1%20\ifx#2\@empty\else\expandafter\html@spaces\fi#2}
-					\catcode\%=14
-					\makeatother
+\makeatletter
+\newcommand\mailto[4]{\href{mailto:#1?subject=#2\&body=#3}{#4}}
+\makeatother
+
+%% MLABSED 2017 author
+\makeatletter
+\newcommand\mailtoMLABSEDauthor[3]{\href{mailto:#1?subject=MLABSED 2017\&body=#2}{#3}}
+\makeatother
+
+%% Convenience shortcuts with predefined recipients
+\makeatletter
+\newcommand\mailtopa[1]{\href{mailto:parhomenko.v@gmail.com?subject=#1\&body=Dear Vladimir,}{Vladimir.Parkhomenko@spbstu.ru}}
+\newcommand\mailtobu[1]{\href{mailto:abuzmakov@gmail.com?subject=#1\&body=Dear Alexey,}{abuzmakov@gmail.com}}
+\newcommand\mailtona[1]{\href{mailto:ksennaidd@gmail.com?subject=#1\&body=Dear Xenia,}{ksennaidd@gmail.com}}
+\newcommand\mailtosh[1]{\href{mailto:shvetsov@inbox.ru?subject=#1\&body=Dear Konstantin,}{Konstantin.Shvetsov@spbstu.ru}}
+\makeatother
 
 
 \usepackage{tabu, tabulary}  %таблицы с автоматически подбирающейся шириной столбцов

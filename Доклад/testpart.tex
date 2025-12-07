@@ -1,0 +1,124 @@
+\input{template_settings/ch_preamble}
+\begin{document}
+\input{template_settings/common/renames}
+%%%% This is the file with a chapter body from the SPbPU-BCI template  %%%%
+%%%%
+   \renewcommand{\chapterEnTitle}{Eleventh chapter title} 
+%% Input the English title here (only once!). 
+%% Please, type in titles small letters except for the first letter in the first word and names of persons etc.
+%% Заполнять по правилам русского языка, не оформляя каждое слово с прописной буквы (заполняется только один раз). 
+%%
+%%%%
+   \renewcommand{\chapterRuTitle}{Название одиннадцатой главы}          
+%% For non-Russian authors the text can be submitted as-is and translated by editors.
+%% Введите заголовок по-русски  (только один раз здесь!).
+%%
+%%%%
+   \setcounter{mychapternumber}{11} 
+%% Input chapter number in case of chapter acceptance. 
+%% введите номер главы в случае принятия главы. 
+%% 
+%%%% 
+   \hyphenation{Diag-nos-tic-Tests-Sca-ling-And-In-fer-ring длинное-название-возможно-например-на-немецком long-title-possible-for example-in-German} 
+%% для редких и/или длинных названий, например, алгоритмов необходимо задать правила переноса на нову строчку по слогам. Использовать в случае, если переносы работают не корректно.
+
+
+\input{template_settings/ch_epigraph} % keep unmodified except for \label{ch-11} after paper acceptance
+	
+\begin{abstr}
+%%%%
+%%		
+%%  Please, write the information in English
+%%		
+%%  Пожалуйта, заполните информацию на английском
+%%		
+	Name SecondName Surname of First Author, scientific degree, title of the position, organization, a address, %
+	\mailtoMLABSEDauthor{email@spbstu.ru}{Dear Author}{email@spbstu.ru}. 
+	%{true email}{email body}{represented email}
+	\par 
+	Name SecondName Surname of Second Author, scientific degree,  title of the position, organization, a address, %
+	\mailtoMLABSEDauthor{email@spbstu.ru}{Dear Author}{email@spbstu.ru}. 
+	%{true email}{email body}{represented email}
+	\par
+	{\normalfont \abstractnameENG.} The text of the abstract in english (at least 70 and at most 150 words).
+	\par
+	{\normalfont \keywordsENG.} Three-six comma separated keywords.
+	\par
+	{\normalfont \acknowledgementsENG.} Acknowledgements, information about supporting grants and funds. Can be omitted. 
+%%		
+	\delnewpagebeforech % keep unmodified, including the following blank lines
+
+%%
+%%
+
+	\chapter*{\normalsize \chapterRuTitle} % keep unmodified
+	
+%%%%
+%%		
+%%  Please, write the information in Russian. For non-Russian authors the text can be submitted as-is and translated by editors.
+%%		
+%%  Пожалуйта, заполните информацию на русском
+%%	
+	Имя Отчество Фамилия первого автора, степень, должность, организация, адрес, \mailtoMLABSEDauthor{email@spbstu.ru}{Dear Author}{email@spbstu.ru}. %{true email}{email body}{represented email}
+	\par
+	Имя Отчество Фамилия второго автора, степень, должность, организация, адрес, \mailtoMLABSEDauthor{email@spbstu.ru}{Dear Author}{email@spbstu.ru}. %{true email}{email body}{represented email}
+	\par
+	{\normalfont \abstractname.} Текст аннотации на русском (минимум 70 и максимум 150 слов).   
+	\par
+	{\normalfont \keywords.} 6-7 ключевых слов через запятую.
+	\par
+	{\normalfont \acknowledgements.} Благодарности, информация о поддерживающих грантах и фондах. При необходимости. 
+
+
+\end{abstr}
+
+%%%%
+%%	Bibliography	
+%%		
+	\begin{refsection}[my_folder/my_biblio.bib] % keep unmodified (or rename <<my_biblio>> everywere if you can)
+		
+	\newrefcontext[labelprefix=\thechapter.] % keep unmodified
+
+	
+%%%%
+%%		
+%%  The following text can be written in English or in Russian. 
+%%  For non-Russian authors the text of titles of sections in Russian can be submitted as-is and translated by editors. 
+%%  
+	
+	\section*{Введение} \label{ch-11:intro}
+
+Текст введения должен отличаться от текста аннотации. В тексте введения освещают такие элементы глав (статей), как
+
+\begin{itemize}
+	\item мотивация (в т.ч. описывается решаемая проблема);
+	\item новизна;
+	\item структура статьи (главы).
+\end{itemize}
+
+Глава (статья) обязательно должна иметь обзор литературы по соответствующей тематике. Выбор места приведения обзора зависит от характера работы и стиля изложения материала. Приветствуются ссылки на литературу при изложении материала, в том числе на работы, которые цитируются в Web of Science (далее --- WoS) и Scopus.
+
+Текст данного шаблона (главы/статьи) призван привести \textit{краткие} примеры оформления текстово-графических объектов. Более подробные примеры можно посмотреть в рекомендациях авторам и редакторам по оформлению главы (статьи) для книг, отправляемых на индексацию в Clarivate Analytics для индексирования в Book Citation Index из WoS Core Collection \cite{spbpu-bci-template-author-guide}. В рекомендациях приведены ссылки на учебно-справочные материалы \LaTeX{} (под \LaTeX{} в документе может подразумеваться также \TeX, \LaTeXe).
+
+Шаблон содержит несколько разделов, чтобы проиллюстрировать правила нумерации текстово-графических объектов. Большинство правил оформления отразилось в pdf-файле автоматически, так как он был получен на основе настроек \LaTeX-документа. В случае использования средств \LaTeX{} \emph{необходимо использовать только тот шаблон} \LaTeX, который размещён по ссылкам: 
+\begin{itemize}
+	\item \cite{spbpu-bci-template} --- электронная версия на сайте шаблона;
+	\item \cite{spbpu-bci-template-zip} --- zip-архив с шаблоном.
+\end{itemize}
+
+Авторам, использующим \LaTeX{} необходимо последовательно заменять текст шаблона в файле <<\verb|my_content.tex|>> на текст своей главы (статьи), избегая при этом ошибок (errors) при компиляции основного файла <<\verb|my_chapter.tex|>>. Синтаксические конструкции \LaTeX, которые задействованы в формировании того или иного текста выделены \texttt{машинописным шрифтом}.
+
+	\section{Название подраздела} \label{ch-11:title-abbr} %название по-русски
+	\addtocru{section}{Название подраздела} %повторите название по-русски
+	\addtocen{section}{Section title} % title in english 
+
+
+Одиночные формулы оформляют в окружении \texttt{equation}, например, как указано в следующей одиночной нумерованной формуле:
+	\begin{equation}
+	\label{eq:Pi}
+	 \pi \approx 3,141.
+	\end{equation}
+
+%%%%
+%%		
+\end{document}
