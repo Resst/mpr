@@ -1,18 +1,26 @@
 \documentclass{beamer}
-\usepackage{graphicx} % Required for inserting images
-\usepackage[english, russian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[english,russian]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{hyperref}
+\usetheme{Madrid}
 
-\title{Исследование подходов к мутационному тестированию}
-\author{Гамов Игорь Александрович}
+\title{Исследование модификаций метода VIKOR: интервальная и нечеткая версии}
+\author{Ванчугов С.М., Гамов И.А.}
 \institute{СПбПУ, ИКНТ ВШ ПИ}
-\date{2024}
+\date{2025}
+
 \begin{document}
 \begin{frame}[plain]
 \maketitle
 \small
 \begin{tabular}[t]{@{}l@{\hspace{1pt}}p{.56\textwidth}@{}}
-\qquad \qquad \qquad \qquad \qquad \qquad Выполнил студент группы 5140903/40401: \\
-\qquad \qquad \qquad \qquad \qquad \qquad Гамов Игорь Александрович
+\qquad \qquad \qquad \qquad \qquad \qquad Выполнили студенты группы 5140903/40401: \\
+\qquad \qquad \qquad \qquad \qquad \qquad Ванчугов С. М, Гамов И. А.
 \end{tabular}%
 
 \begin{tabular}[t]{@{}l@{\hspace{1pt}}p{.32\textwidth}@{}}
@@ -22,211 +30,192 @@
 \end{tabular}%
 \end{frame}
 
-
-
-\begin{frame}{Актуальность и новизна}
-
-Тестирование в наше время стало неотъемлемой частью разработки программного обеспечения. В наиболее сложных проектах соотношение тестировщиков и разработчиков может составлять 1:1. В таких условиях важно уметь оценивать качество написанных тестов. Наиболее известный инструмент для этого -- это оценка покрытия кода, однако данный инструмент плохо позволяет оценить именно качество тестов. Для такой задачи было придумано мутационное тестирование. Идея состоит в том, чтобы преобразовывать часть программного кода, покрытую тестами и проверять, выявили ли уже написанные тесты ошибку из-за изменения (мутации). У данного подхода имеется множество проблем, являющихся предметом современной научной дискуссии, как например, выявление мутаций, не изменяющих поведение программы. 
-
-
-
+% Slide: Актуальность
+\begin{frame}{Актуальность и цель}
+\begin{itemize}
+  \item В задачах многокритериального принятия решений часто требования конфликтуют, нужна компромиссная стратегия.
+  \item Классический VIKOR выдаёт компромиссное ранжирование, но требует точных числовых оценок.
+  \item Цель: описать VIKOR, интервальную и нечеткую модификации, показать реализацию и иллюстративный пример.
+\end{itemize}
 \end{frame}
 
+% Slide: Кратко о VIKOR
+\begin{frame}{Классический метод VIKOR — суть}
+Даны альтернативы $A=\{A_1,\dots,A_m\}$ и критерии $C=\{c_1,\dots,c_n\}$, оценки $f_{ij}$. Веса $w_j$, $\sum_{j=1}^n w_j=1$.
 
+Для каждого критерия определяем идеальное и антиидеальное значения:
+\[
+\begin{aligned}
+&\text{выгодный: } f_j^{*}=\max_i f_{ij},\ \ f_j^{-}=\min_i f_{ij},\\
+&\text{затратный: } f_j^{*}=\min_i f_{ij},\ \ f_j^{-}=\max_i f_{ij}.
+\end{aligned}
+\]
 
+Две меры отклонения:
+\[
+S_i=\sum_{j=1}^n w_j\frac{f_j^{*}-f_{ij}}{f_j^{*}-f_j^{-}},\qquad
+R_i=\max_{1\le j\le n}\left\{ w_j\frac{f_j^{*}-f_{ij}}{f_j^{*}-f_j^{-}}\right\}.
+\]
 
+Компромиссный индекс:
+\[
+Q_i = v\frac{S_i-S^{*}}{S^{-}-S^{*}} + (1-v)\frac{R_i-R^{*}}{R^{-}-R^{*}},
+\]
+где $S^{*}=\min_i S_i$, $S^{-}=\max_i S_i$, аналогично для $R$.
+\end{frame}
 
-\begin{frame}{Ученые (1/2)}
-
-	\begin{itemize}
-		\item \textbf{Mike Papadakis}
-        
-        Основные области исследования: мутационное тестирование, искусственный интеллект, программное обеспечение и машинное обучение. Исследование включает в себя такие дисциплины, как модульное тестирование и тестирование «белого ящика».
-
-        \item \textbf{Gordon Fraser}
-
-        Занимается исследованиями в области модульного тестирования и покрытия кода. Его исследования модульного тестирования включают изучение проблем, связанных с Java, поисковыми системами и регрессионным тестированием.
-        
-        
-  \end{itemize}
-  
-\end{frame} 
-
-\begin{frame}{Ученые (2/2)}
-
-	\begin{itemize}
-        
-        \item \textbf{Lingming Zhang}
-
-        Исследует возможности автоматизированного восстановления программ, модульного тестирования, мутационного тестирования, оценки покрытия кода. Также изучает возможности применения различных методов машинного обучения, больших языковых моделей в этих областях  
-        
-        \item \textbf{Darko Marinov}
-
-        В основном занимается изучением вопросов, связанных с Java, разработкой и тестированием ПО. Также занимается вопросами, связанными с программной инженерией, покрытием кода, модульным тестированием.
-        
-        \item \textbf{Alex Groce}
-
-        Основные исследования касаются проверки моделей, теоретической информатики и анализа исходного кода. Его работа посвящена таким темам, как формальная верификация и тестирование «белого ящика».
-        
-  \end{itemize}
-  
-\end{frame} 
-
-
-\begin{frame}{Список источников (1/5)}
-
-
-
-	\begin{itemize}
-		\item \textbf{Reducing Manual Efforts in Equivalence Analysis in Mutation Testing.}
-
-        Amorim, S., Fernandes, L., Ribeiro, M., Gheyi, R., Delamaro, M., Guimarães, M. and Santos, A. (2024). 
-        
-        https://doi.org/10.5753/jserd.2024.3588
-        \item \textbf{Mutation Testing in Practice: Insights From Open-Source Software Developers.}
-
-        A. B. Sánchez, J. A. Parejo, S. Segura, A. Durán and M. Papadakis (2024)
-        
-        https://doi.org/10.1109/tse.2024.3377378
-        \item \textbf{Contextual Predictive Mutation Testing.} 
-        
-        Kush Jain, Uri Alon, Alex Groce, and Claire Le Goues (2023) 
-        
-        https://doi.org/10.1145/3611643.3616289
-  \end{itemize}
-  
-\end{frame} 
-\begin{frame}{Список источников (2/5)}
-
-
-
-	\begin{itemize}
-		\item \textbf{Regression mutation testing.} 
-        
-        Lingming Zhang, Darko Marinov, Lu Zhang, and Sarfraz Khurshid (2012)
-        
-        https://doi.org/10.1145/2338965.2336793
-        
-        \item \textbf{An extensible, regular-expression-based tool for multi-language mutant generation.}
-
-        Alex Groce, Josie Holmes, Darko Marinov, August Shi, and Lingming Zhang (2018)
-        
-        https://doi.org/10.1145/3183440.3183485
-
-        \item \textbf{Predictive mutation testing.}
-        
-        Jie Zhang, Ziyi Wang, Lingming Zhang, Dan Hao, Lei Zang, Shiyang Cheng, and Lu Zhang (2016)
-        
-        https://doi.org/10.1145/2931037.2931038
-  \end{itemize}
-  
-\end{frame} 
-\begin{frame}{Список источников (3/5)}
-
-
-
-	\begin{itemize}
-		\item \textbf{Selective mutation testing for concurrent code.}
-
-        Milos Gligoric, Lingming Zhang, Cristiano Pereira, and Gilles Pokam (2013)
-        
-        https://doi.org/10.1145/2483760.2483773
-        
-        \item \textbf{FRAFOL: FRAmework FOr Learning mutation testing.}
-        
-        Pedro Tavares, Ana Paiva, Domenico Amalfitano, and René Just (2024)
-        
-        https://doi.org/10.1145/3650212.3685306
-
-        \item \textbf{An Empirical Study on How Large Language Models Impact Software Testing Learning.}
-
-        Simone Mezzaro, Alessio Gambi, and Gordon Fraser (2024)
-        
-        https://doi.org/10.1145/3661167.3661273
-  \end{itemize}
-  
-\end{frame} 
-\begin{frame}{Список источников (4/5)}
-
-
-
-	\begin{itemize}
-		\item \textbf{A practical system for mutation testing: help for the common programmer.}
-        
-        A. J. Offutt (1994)
-        
-        https://doi.ieeecomputersociety.org/10.1109/TEST.1994.528535
-        
-        \item \textbf{Weak Mutation Testing and Completeness of Test Sets.}
-
-        W. E. Howden (1992)
-        
-        https://doi.ieeecomputersociety.org/10.1109/TSE.1982.235571
-
-        \item \textbf{Mutation Testing of Java Bytecode: A Model-Driven Approach.}
-        
-        Christoph Bockisch, Deniz Eren, Sascha Lehmann, Daniel Neufeld, and Gabriele Taentzer (2024)
-        
-        https://doi.org/10.1145/3640310.3674103
-        
-  \end{itemize}
-  
-\end{frame} 
-\begin{frame}{Список источников (5/5)}
-
-
-
-	\begin{itemize}
-		\item \textbf{Descartes: a PITest engine to detect pseudo-tested methods: tool demonstration.}
-
-        Oscar Luis Vera-Pérez, Martin Monperrus, and Benoit Baudry (2018)
-        
-        https://doi.org/10.1145/3238147.3240474
-        
-        \item \textbf{Mutation testing of unsupervised learning systems.}
-
-        Yuteng Lu, Kaicheng Shao, Jia Zhao, Weidi Sun, Meng Sun (2024)
-
-        https://doi.org/10.1016/j.sysarc.2023.103050
-
-        \item \textbf{Mutation-driven generation of unit tests and oracles.}
-        
-        Gordon Fraser and Andreas Zeller (2010)
-        
-        https://doi.org/10.1145/1831708.1831728
-        
-  \end{itemize}
-  
-\end{frame} 
-\begin{frame}{Стратегия поиска (1/2)}
-
-Для поиска источников были использованы следующие системы:  
+% Slide: Применимость
+\begin{frame}{Области применимости}
 \begin{itemize}
-    \item crossref 
-    \item dblp
-    \item dl acm
-    \item ieeexplore
+  \item Инженерные и прикладные задачи с конфликтующими критериями.
+  \item Сценарии, где важен компромисс между суммарной пользой (S) и наихудшим отклонением (R).
+  \item Задачи с неопределёнными оценками — требуют расширений (интервалы, нечеткость).
+\end{itemize}
+\end{frame}
+
+% Slide: Интервальная модификация - идея
+\begin{frame}{Интервальная модификация — идея}
+\begin{itemize}
+  \item Оценки даются интервально: $f_{ij}=[\underline{f}_{ij},\overline{f}_{ij}]$.
+  \item Цель — получить интервальные $S_i$, $R_i$, $Q_i$ и корректные процедуры сравнения.
+  \item Подходы: применять интервальную арифметику и выбирать комбинации концов интервалов для пессимистичных/оптимистичных оценок (см. Sayadi et~al., 2009).
+\end{itemize}
+\end{frame}
+
+% Slide: Интервальная модификация - формулы
+\begin{frame}{Интервальные идеал/надир и $D_{ij}$}
+Для выгодного критерия:
+\[
+f_j^{*}=\bigl[\max_i\underline{f}_{ij},\ \max_i\overline{f}_{ij}\bigr],\qquad
+f_j^{-}=\bigl[\min_i\underline{f}_{ij},\ \min_i\overline{f}_{ij}\bigr].
+\]
+Для затратного — аналогично через мин/макс.
+
+Нормализованный интервальный разрыв (пессимистич./оптимистич.):
+\[
+D_{ij}=\Biggl[
+\frac{f_j^{*(\text{low})}-\overline{f}_{ij}}{\,f_j^{*(\text{low})}-f_j^{-\,(\text{high})}\,}\ ,\
+\frac{f_j^{*(\text{high})}-\underline{f}_{ij}}{\,f_j^{*(\text{high})}-f_j^{-\,(\text{low})}\,}
+\Biggr].
+\]
+Агрегация:
+\[
+S_i=\bigl[\sum_j w_j D_{ij}^{(\text{low})},\ \sum_j w_j D_{ij}^{(\text{high})}\bigr],
+\]
+\[
+R_i=\bigl[\max_j w_j D_{ij}^{(\text{low})},\ \max_j w_j D_{ij}^{(\text{high})}\bigr].
+\]
+\end{frame}
+
+% Slide: Реализация (связь с кодом)
+\begin{frame}{Реализация интервальной версии — как это связано с Python}
+Основные моменты реализации (соответствует предоставленному коду):
+\begin{itemize}
+  \item Вход: тензор \texttt{matrix} размера $(m,n,2)$: нижняя/верхняя границы.
+  \item Вычисление $f_j^{*}$ и $f_j^{-}$ — по компонентам нижних/верхних границ.
+  \item Нормализация: в строгой реализации используем дроби с соответствующими концами интервалов; в упрощённой — можно применять центры интервалов (быстрее).
+  \item Получаем интервальные $S_i$, $R_i$; затем строим интервальные $Q_i$ по границам (левая/правая).
+  \item Ранжирование/выбор — часто по центрам интервалов или методом сравнения интервалов; применяются условия приемлемости (advantage, stability) как в классическом VIKOR.
+\end{itemize}
+\end{frame}
+
+% Slide: Иллюстративный пример (результаты)
+\begin{frame}{Иллюстративный пример — результаты (из ipynb)}
+\textbf{Идеальная и надирная точки:}
+\[
+\begin{array}{lcl}
+\text{Критерий 1:} & f^*=[0.800,1.000], & f^-=[0.500,0.700],\\
+\text{Критерий 2:} & f^*=[0.800,1.000], & f^-=[0.500,0.700],\\
+\text{Критерий 3:} & f^*=[0.500,0.700], & f^-=[0.800,1.000].
+\end{array}
+\]
+
+\vspace{6pt}
+\textbf{Метрики (S-интервал, R-интервал, Q\_center):}
+\begin{tabular}{l c c c}
+\toprule
+Альтер & S & R & Q\_center\\
+\midrule
+A1 & [0.6667,0.6667] & [0.3000,0.3000] & 0.7500\\
+A2 & [0.4000,0.4000] & [0.3000,0.3000] & 0.3500\\
+A3 & [0.6000,0.6000] & [0.4000,0.4000] & 0.9000\\
+A4 & [0.3333,0.3333] & [0.2000,0.2000] & 0.0000\\
+\bottomrule
+\end{tabular}
+\end{frame}
+
+% Slide: Ранжирование и анализ
+\begin{frame}{Ранжирование и краткий анализ}
+Ранжирование (по центрам $Q$): $\mathrm{A4} \rightarrow \mathrm{A2} \rightarrow \mathrm{A1} \rightarrow \mathrm{A3}$.\\
+Лучшая альтернатива: \textbf{A4}. Условия приемлемости: выполнены.
+
+Анализ чувствительности по параметру $v$:
+\begin{itemize}
+  \item При $v=0.3$ / $0.5$ лучшая A4.
+  \item При больших $v$ (ориентация на $S$) может формироваться компромиссный набор (A4+A2).
 \end{itemize}
 
-  
-\end{frame} 
-\begin{frame}{Стратегия поиска (2/2)}
-При поиске были использованы ключевые слова:
-\begin{itemize}
+Краткий вывод: интервальная версия даёт устойчивое ранжирование и позволяет видеть неопределённость результатов (пересечения интервалов → частичные порядки).
+\end{frame}
 
-    \item Mutation testing
-    \item Weak mutation 
-    \item PITest.
-\end{itemize}
-
-Также при добавлении операторов И/ИЛИ были использованы ключевые слова:
-  
+% Slide: Fuzzy VIKOR - idea
+\begin{frame}{Нечеткая (fuzzy) модификация — идея}
 \begin{itemize}
-    \item Framework
-    \item Java 
-    \item Artificial intelligence.
-    \item LLM
+  \item Оценки и/или веса задаются треугольными нечеткими числами (TFN): $\tilde{x}=(x^L,x^M,x^U)$.
+  \item Операции (нормализация, суммирование, максимум) выполняются покомпонентно.
+  \item Получаем нечеткие $\tilde{S}_i,\tilde{R}_i$, затем дефаззификация (например, $(L+M+U)/3$) и классическое вычисление $Q$.
+  \item Классический пример и формулировка: Opricovic (2011).
 \end{itemize}
-\end{frame} 
+\end{frame}
+
+% Slide: Fuzzy formulas
+\begin{frame}{Основные формулы для Fuzzy VIKOR (TFN)}
+Идеальные/надирные TFN (выгодный критерий):
+\[
+\tilde{f}_j^{*}=(\max_i f_{ij}^{L},\ \max_i f_{ij}^{M},\ \max_i f_{ij}^{U}),
+\]
+аналогично для $\tilde{f}_j^{-}$ (по миниму/максиму соответственно).
+
+Нормализованные расстояния (пример по Opricovic):
+\[
+\tilde{d}_{ij}=\Bigl(\,
+\frac{f_j^{*L}-f_{ij}^{U}}{f_j^{*U}-f_j^{-L}},\;
+\frac{f_j^{*M}-f_{ij}^{M}}{f_j^{*M}-f_j^{-M}},\;
+\frac{f_j^{*U}-f_{ij}^{L}}{f_j^{*L}-f_j^{-U}}
+\Bigr).
+\]
+
+Далее: $\tilde{S}_i=\sum_j \tilde{w}_j\otimes\tilde{d}_{ij}$, $\tilde{R}_i=\max_j(\tilde{w}_j\otimes\tilde{d}_{ij})$, дефаззификация → $S_i,R_i,Q_i$.
+\end{frame}
+
+% Slide: Сравнение результатов
+\begin{frame}{Сравнение и рекомендации}
+\begin{itemize}
+  \item Интервальная и нечеткая модификации повышают устойчивость ранжирования при неопределённости входных данных.
+  \item Интервальная версия даёт наглядные интервалы для $Q_i$ — удобно при экспертных диапазонах.
+  \item Fuzzy версия удобна при лингвистических оценках и нечетких весах.
+  \item Практически: если большая выборка/скорость важна — допускается аппроксимация центрами интервалов; при критичных решениях — использовать полную интервальную/нечеткую арифметику.
+\end{itemize}
+\end{frame}
+
+% Slide: Источники
+\begin{frame}[allowframebreaks]{Список источников}
+\begin{thebibliography}{10}
+\bibitem{sayadi2009}
+Sayadi M. K., Heydari M., Shahanaghi K. Extension of VIKOR method for decision making problem with interval numbers // Applied Mathematical Modelling. 2009. Vol.33, No.5. P.2257--2262. DOI:10.1016/j.apm.2008.06.002.
+
+\bibitem{chatterjee2016}
+Chatterjee P., Chakraborty S. A comparative analysis of VIKOR method and its variants // Decision Science Letters. 2016. Vol.5, No.4. P.469--486. DOI:10.5267/j.dsl.2016.5.004.
+
+\bibitem{liu2017}
+Liu P., Qin X. An Extended VIKOR Method for Decision Making Problem with Interval-Valued Linguistic Intuitionistic Fuzzy Numbers Based on Entropy // Informatica. 2017. Vol.28, No.4. P.665--685. DOI:10.15388/Informatica.2017.151.
+
+\bibitem{wan2013}
+Wan S.-P. The extended VIKOR method for multi-attribute group decision making with triangular intuitionistic fuzzy numbers // Knowledge-Based Systems. 2013. Vol.52. P.65--77. DOI:10.1016/j.knosys.2013.06.019.
+
+\bibitem{Opricovic2011}
+Opricovic S. Fuzzy VIKOR with an application to water resources planning // Expert Systems with Applications. 2011. Vol.38, No.10. P.12983--12990. DOI:10.1016/j.eswa.2011.04.097.
+\end{thebibliography}
+\end{frame}
 
 \end{document}
