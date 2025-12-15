@@ -81,6 +81,8 @@ Q_i=v\frac{S_i-S^{*}}{S^{-}-S^{*}}+(1-v)\frac{R_i-R^{*}}{R^{-}-R^{*}}.
   \item Получают $S_i=[S_i^{\mathrm{low}},S_i^{\mathrm{high}}]$, $R_i=[R_i^{\mathrm{low}},R_i^{\mathrm{high}}]$, и интервальные $Q_i$.
   \item Ранжирование: часто по центрам интервалов или специальным правилам сравнения интервалов.
 \end{itemize}
+
+\textit{Интервальная версия VIKOR предложена в работе} \cite{sayadi2009, chatterjee2016}.
 \end{frame}
 
 
@@ -100,6 +102,8 @@ Q_i=v\frac{S_i-S^{*}}{S^{-}-S^{*}}+(1-v)\frac{R_i-R^{*}}{R^{-}-R^{*}}.
     \]
   \item Деление: $[a,b]/[c,d]$ определена, если $0\notin[c,d]$; вычисляется как умножение на обратный интервал.
 \end{itemize}
+
+\textit{Интервальная арифметика используется в рамках интервального VIKOR по \cite{sayadi2009}}.
 \end{frame}
 
 
@@ -124,6 +128,9 @@ D_{ij}=\Biggl[
 S_i=[\sum_j w_j D_{ij}^{\text{low}},\ \sum_j w_j D_{ij}^{\text{high}}],\quad
 R_i=[\max_j w_j D_{ij}^{\text{low}},\ \max_j w_j D_{ij}^{\text{high}}].
 \]
+
+\vspace{4pt}
+{\footnotesize Формулы нормализации и агрегации соответствуют интервальному VIKOR \cite{sayadi2009,chatterjee2016}.}
 \end{frame}
 
 % Slide: Пример решения по интервальной модификации
@@ -136,6 +143,8 @@ R_i=[\max_j w_j D_{ij}^{\text{low}},\ \max_j w_j D_{ij}^{\text{high}}].
   \item Ранжирование по центрам $Q$:\quad A4 $\rightarrow$ A2 $\rightarrow$ A1 $\rightarrow$ A3.
   \item Интервальная форма показывает возможные пересечения и частичные порядки.
 \end{itemize}
+
+\textit{Пример приведён по мотивам вычислительной схемы интервального VIKOR \cite{sayadi2009}}.
 \end{frame}
 
 % Slide: Интервальная версия -- реализация и выводы
@@ -192,7 +201,7 @@ R_i=[\max_j w_j D_{ij}^{\text{low}},\ \max_j w_j D_{ij}^{\text{high}}].
 	  \item Оценки и/или веса задаются TFN (треугольные нечеткие числа) $\tilde x=(x^L,x^M,x^U)$.
 	  \item Операции (максимум, сумма, умножение) выполняются покомпонентно.
 	  \item Получаем нечеткие $\tilde S_i,\tilde R_i,\tilde Q_i$; затем дефаззификация в скаляры (обычно центроид $(L+M+U)/3$).
-	  \item Особенно удобен при лингвистических оценках экспертов.
+	  \item Особенно удобен при лингвистических оценках экспертов \cite{Opricovic2011, liu2017, wan2013}. 
 	\end{itemize}
 \end{frame}
 
@@ -229,7 +238,7 @@ R_i=[\max_j w_j D_{ij}^{\text{low}},\ \max_j w_j D_{ij}^{\text{high}}].
 \tilde f_j^{*}=(\max_i f_{ij}^L,\ \max_i f_{ij}^M,\ \max_i f_{ij}^U).
 \]
 
-Нормализация (по Opricovic, пример):
+Нормализация (\textit{по Opricovic \cite{Opricovic2011}}):
 \[
 \tilde d_{ij}=\Bigl(
 \frac{f_j^{*L}-f_{ij}^U}{f_j^{*U}-f_j^{-L}},\;
@@ -244,7 +253,7 @@ R_i=[\max_j w_j D_{ij}^{\text{low}},\ \max_j w_j D_{ij}^{\text{high}}].
 \tilde R_i=\max_j(\tilde w_j\otimes\tilde d_{ij}).
 \]
 
-Дефаззификация: $S_i=\mathrm{Defuzz}(\tilde S_i)$, аналогично для $R_i$ и $Q_i$.
+Дефаззификация: $S_i=\mathrm{Defuzz}(\tilde S_i)$, аналогично для $R_i$ и $Q_i$ \cite{Opricovic2011, liu2017, wan2013}.
 \end{frame}
 
 \begin{frame}{Пример по нечеткой модификации}
@@ -317,8 +326,8 @@ R_i=[\max_j w_j D_{ij}^{\text{low}},\ \max_j w_j D_{ij}^{\text{high}}].
 % Slide: Применимость fuzzy vs interval
 \begin{frame}{Когда применять какую модификацию}
 \begin{itemize}
-  \item \textbf{Интервальная} -- данные заданы диапазонами (measurement error, диапазон оценок).
-  \item \textbf{Fuzzy} -- экспертные лингвистические оценки, неоднозначные предпочтения, когда важна модель принадлежности.
+  \item \textbf{Интервальная} -- данные заданы диапазонами (measurement error, диапазон оценок) \cite{chatterjee2016, sayadi2009}.
+  \item \textbf{Fuzzy} -- экспертные лингвистические оценки, неоднозначные предпочтения, когда важна модель принадлежности \cite{Opricovic2011}.
   \item Практика: для быстрой оценки можно использовать центры интервалов / модальные значения TFN; для критичных решений -- полные методы с дефаззификацией и анализом пересечений.
 \end{itemize}
 \end{frame}
@@ -376,22 +385,39 @@ R_i=[\max_j w_j D_{ij}^{\text{low}},\ \max_j w_j D_{ij}^{\text{high}}].
 
 % Slide: Источники
 \begin{frame}[allowframebreaks]{Список источников}
-\begin{thebibliography}{10}
-\bibitem{sayadi2009}
-Sayadi M. K., Heydari M., Shahanaghi K. Extension of VIKOR method for decision making problem with interval numbers // Applied Mathematical Modelling. 2009. Vol.33, No.5. P.2257--2262. DOI:10.1016/j.apm.2008.06.002.
-
-\bibitem{chatterjee2016}
-Chatterjee P., Chakraborty S. A comparative analysis of VIKOR method and its variants // Decision Science Letters. 2016. Vol.5, No.4. P.469--486. DOI:10.5267/j.dsl.2016.5.004.
-
-\bibitem{liu2017}
-Liu P., Qin X. An Extended VIKOR Method for Decision Making Problem with Interval-Valued Linguistic Intuitionistic Fuzzy Numbers Based on Entropy // Informatica. 2017. Vol.28, No.4. P.665--685. DOI:10.15388/Informatica.2017.151.
-
-\bibitem{wan2013}
-Wan S.-P. The extended VIKOR method for multi-attribute group decision making with triangular intuitionistic fuzzy numbers // Knowledge-Based Systems. 2013. Vol.52. P.65--77. DOI:10.1016/j.knosys.2013.06.019.
-
-\bibitem{Opricovic2011}
-Opricovic S. Fuzzy VIKOR with an application to water resources planning // Expert Systems with Applications. 2011. Vol.38, No.10. P.12983--12990. DOI:10.1016/j.eswa.2011.04.097.
-\end{thebibliography}
+	\begin{thebibliography}{10}
+		
+		\bibitem{sayadi2009}
+		Sayadi M. K., Heydari M., Shahanaghi K.
+		Extension of VIKOR method for decision making problem with interval numbers //
+		Applied Mathematical Modelling. 2009. Vol.33, No.5. P.2257--2262.\\
+		\href{https://doi.org/10.1016/j.apm.2008.06.002}{DOI: 10.1016/j.apm.2008.06.002}
+		
+		\bibitem{chatterjee2016}
+		Chatterjee P., Chakraborty S.
+		A comparative analysis of VIKOR method and its variants //
+		Decision Science Letters. 2016. Vol.5, No.4. P.469--486.\\
+		\href{https://doi.org/10.5267/j.dsl.2016.5.004}{DOI: 10.5267/j.dsl.2016.5.004}
+		
+		\bibitem{liu2017}
+		Liu P., Qin X.
+		An Extended VIKOR Method for Decision Making Problem with Interval-Valued Linguistic Intuitionistic Fuzzy Numbers Based on Entropy //
+		Informatica. 2017. Vol.28, No.4. P.665--685.\\
+		\href{https://doi.org/10.15388/Informatica.2017.151}{DOI: 10.15388/Informatica.2017.151}
+		
+		\bibitem{wan2013}
+		Wan S.-P.
+		The extended VIKOR method for multi-attribute group decision making with triangular intuitionistic fuzzy numbers //
+		Knowledge-Based Systems. 2013. Vol.52. P.65--77.\\
+		\href{https://doi.org/10.1016/j.knosys.2013.06.019}{DOI: 10.1016/j.knosys.2013.06.019}
+		
+		\bibitem{Opricovic2011}
+		Opricovic S.
+		Fuzzy VIKOR with an application to water resources planning //
+		Expert Systems with Applications. 2011. Vol.38, No.10. P.12983--12990.\\
+		\href{https://doi.org/10.1016/j.eswa.2011.04.097}{DOI: 10.1016/j.eswa.2011.04.097}
+		
+	\end{thebibliography}
 \end{frame}
 
 \end{document}
