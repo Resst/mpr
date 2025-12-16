@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.12)  16 DEC 2025 01:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.12)  16 DEC 2025 09:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1273,15 +1273,231 @@ Overfull \hbox (119.28323pt too wide) has occurred while \output is active
 [3
 
 ]
-Overfull \hbox (43.63654pt too wide) in paragraph at lines 73--73
+Overfull \hbox (43.63654pt too wide) in paragraph at lines 91--91
  [][]  \T2A/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (119.28323pt too wide) in paragraph at lines 73--73
+Overfull \hbox (119.28323pt too wide) in paragraph at lines 91--91
  [][][][]  
  []
 
+
+LaTeX Warning: Command \cyrp invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyrr invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyri invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyro invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyrr invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyri invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyrt invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyre invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyrt invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyrs invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyru invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyrm invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyrm invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyra invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyrr invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyrn invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyro invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyrg invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyro invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyrv invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyrery invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyri invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyrg invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyrr invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyrery invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyrsh invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyra invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyrp invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyrr invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyri invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyro invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyrr invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyri invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyrt invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyre invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyrt invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyrn invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyra invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyri invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyrh invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyru invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyrd invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyrsh invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyre invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyrg invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyro invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyrk invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyrr invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyri invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyrt invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyre invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyrr invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyri invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \cyrya invalid in math mode on input line 91.
+
+Missing character: There is no ï in font cmss10!
+Missing character: There is no ð in font cmss10!
+Missing character: There is no è in font cmss10!
+Missing character: There is no î in font cmss10!
+Missing character: There is no ð in font cmss10!
+Missing character: There is no è in font cmss10!
+Missing character: There is no ò in font cmss10!
+Missing character: There is no å in font cmss10!
+Missing character: There is no ò in font cmss10!
+Missing character: There is no ñ in font cmss10!
+Missing character: There is no ó in font cmss10!
+Missing character: There is no ì in font cmss10!
+Missing character: There is no ì in font cmss10!
+Missing character: There is no à in font cmss10!
+Missing character: There is no ð in font cmss10!
+Missing character: There is no í in font cmss10!
+Missing character: There is no î in font cmss10!
+Missing character: There is no ã in font cmss10!
+Missing character: There is no î in font cmss10!
+Missing character: There is no â in font cmss10!
+Missing character: There is no û in font cmss10!
+Missing character: There is no è in font cmss10!
+Missing character: There is no ã in font cmss10!
+Missing character: There is no ð in font cmss10!
+Missing character: There is no û in font cmss10!
+Missing character: There is no ø in font cmss10!
+Missing character: There is no à in font cmss10!
+Missing character: There is no ï in font cmss10!
+Missing character: There is no ð in font cmss10!
+Missing character: There is no è in font cmss10!
+Missing character: There is no î in font cmss10!
+Missing character: There is no ð in font cmss10!
+Missing character: There is no è in font cmss10!
+Missing character: There is no ò in font cmss10!
+Missing character: There is no å in font cmss10!
+Missing character: There is no ò in font cmss10!
+Missing character: There is no í in font cmss10!
+Missing character: There is no à in font cmss10!
+Missing character: There is no è in font cmss10!
+Missing character: There is no õ in font cmss10!
+Missing character: There is no ó in font cmss10!
+Missing character: There is no ä in font cmss10!
+Missing character: There is no ø in font cmss10!
+Missing character: There is no å in font cmss10!
+Missing character: There is no ã in font cmss10!
+Missing character: There is no î in font cmss10!
+Missing character: There is no ê in font cmss10!
+Missing character: There is no ð in font cmss10!
+Missing character: There is no è in font cmss10!
+Missing character: There is no ò in font cmss10!
+Missing character: There is no å in font cmss10!
+Missing character: There is no ð in font cmss10!
+Missing character: There is no è in font cmss10!
+Missing character: There is no ÿ in font cmss10!
 
 Overfull \hbox (43.63654pt too wide) has occurred while \output is active
  [][]  \T2A/cmss/m/n/6 ([])  
@@ -1295,12 +1511,12 @@ Overfull \hbox (119.28323pt too wide) has occurred while \output is active
 [4
 
 ]
-Overfull \hbox (43.63654pt too wide) in paragraph at lines 86--86
+Overfull \hbox (43.63654pt too wide) in paragraph at lines 100--100
  [][]  \T2A/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (119.28323pt too wide) in paragraph at lines 86--86
+Overfull \hbox (119.28323pt too wide) in paragraph at lines 100--100
  [][][][]  
  []
 
@@ -1317,12 +1533,12 @@ Overfull \hbox (119.28323pt too wide) has occurred while \output is active
 [5
 
 ]
-Overfull \hbox (43.63654pt too wide) in paragraph at lines 107--107
+Overfull \hbox (43.63654pt too wide) in paragraph at lines 113--113
  [][]  \T2A/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (119.28323pt too wide) in paragraph at lines 107--107
+Overfull \hbox (119.28323pt too wide) in paragraph at lines 113--113
  [][][][]  
  []
 
@@ -1361,12 +1577,12 @@ Overfull \hbox (119.28323pt too wide) has occurred while \output is active
 [7
 
 ]
-Overfull \hbox (43.63654pt too wide) in paragraph at lines 159--159
+Overfull \hbox (43.63654pt too wide) in paragraph at lines 161--161
  [][]  \T2A/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (119.28323pt too wide) in paragraph at lines 159--159
+Overfull \hbox (119.28323pt too wide) in paragraph at lines 161--161
  [][][][]  
  []
 
@@ -1383,38 +1599,60 @@ Overfull \hbox (119.28323pt too wide) has occurred while \output is active
 [8
 
 ]
-Overfull \hbox (43.63654pt too wide) in paragraph at lines 175--175
+Overfull \hbox (43.63654pt too wide) in paragraph at lines 186--186
  [][]  \T2A/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (119.28323pt too wide) in paragraph at lines 175--175
+Overfull \hbox (119.28323pt too wide) in paragraph at lines 186--186
  [][][][]  
  []
 
 
-LaTeX Warning: Command \CYRK invalid in math mode on input line 175.
+Overfull \hbox (43.63654pt too wide) has occurred while \output is active
+ [][]  \T2A/cmss/m/n/6 ([])  
+ []
 
 
-LaTeX Warning: Command \cyrr invalid in math mode on input line 175.
+Overfull \hbox (119.28323pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[9
+
+]
+Overfull \hbox (43.63654pt too wide) in paragraph at lines 202--202
+ [][]  \T2A/cmss/m/n/6 ([])  
+ []
 
 
-LaTeX Warning: Command \cyri invalid in math mode on input line 175.
+Overfull \hbox (119.28323pt too wide) in paragraph at lines 202--202
+ [][][][]  
+ []
 
 
-LaTeX Warning: Command \cyrt invalid in math mode on input line 175.
+LaTeX Warning: Command \CYRK invalid in math mode on input line 202.
 
 
-LaTeX Warning: Command \cyre invalid in math mode on input line 175.
+LaTeX Warning: Command \cyrr invalid in math mode on input line 202.
 
 
-LaTeX Warning: Command \cyrr invalid in math mode on input line 175.
+LaTeX Warning: Command \cyri invalid in math mode on input line 202.
 
 
-LaTeX Warning: Command \cyri invalid in math mode on input line 175.
+LaTeX Warning: Command \cyrt invalid in math mode on input line 202.
 
 
-LaTeX Warning: Command \cyrishrt invalid in math mode on input line 175.
+LaTeX Warning: Command \cyre invalid in math mode on input line 202.
+
+
+LaTeX Warning: Command \cyrr invalid in math mode on input line 202.
+
+
+LaTeX Warning: Command \cyri invalid in math mode on input line 202.
+
+
+LaTeX Warning: Command \cyrishrt invalid in math mode on input line 202.
 
 Missing character: There is no Ê in font cmss10!
 Missing character: There is no ð in font cmss10!
@@ -1434,88 +1672,18 @@ Overfull \hbox (119.28323pt too wide) has occurred while \output is active
  [][][][]  
  []
 
-[9
-
-]
-Overfull \hbox (43.63654pt too wide) in paragraph at lines 193--193
- [][]  \T2A/cmss/m/n/6 ([])  
- []
-
-
-Overfull \hbox (119.28323pt too wide) in paragraph at lines 193--193
- [][][][]  
- []
-
-
-Overfull \hbox (43.63654pt too wide) has occurred while \output is active
- [][]  \T2A/cmss/m/n/6 ([])  
- []
-
-
-Overfull \hbox (119.28323pt too wide) has occurred while \output is active
- [][][][]  
- []
-
 [10
 
 ]
-Overfull \hbox (43.63654pt too wide) in paragraph at lines 209--209
+Overfull \hbox (43.63654pt too wide) in paragraph at lines 220--220
  [][]  \T2A/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (119.28323pt too wide) in paragraph at lines 209--209
+Overfull \hbox (119.28323pt too wide) in paragraph at lines 220--220
  [][][][]  
  []
 
-
-LaTeX Warning: Command \CYRA invalid in math mode on input line 209.
-
-
-LaTeX Warning: Command \cyrl invalid in math mode on input line 209.
-
-
-LaTeX Warning: Command \cyrsftsn invalid in math mode on input line 209.
-
-
-LaTeX Warning: Command \cyrt invalid in math mode on input line 209.
-
-
-LaTeX Warning: Command \cyre invalid in math mode on input line 209.
-
-
-LaTeX Warning: Command \cyrr invalid in math mode on input line 209.
-
-
-LaTeX Warning: Command \cyrn invalid in math mode on input line 209.
-
-
-LaTeX Warning: Command \cyra invalid in math mode on input line 209.
-
-
-LaTeX Warning: Command \cyrt invalid in math mode on input line 209.
-
-
-LaTeX Warning: Command \cyri invalid in math mode on input line 209.
-
-
-LaTeX Warning: Command \cyrv invalid in math mode on input line 209.
-
-
-LaTeX Warning: Command \cyra invalid in math mode on input line 209.
-
-Missing character: There is no À in font cmss10!
-Missing character: There is no ë in font cmss10!
-Missing character: There is no ü in font cmss10!
-Missing character: There is no ò in font cmss10!
-Missing character: There is no å in font cmss10!
-Missing character: There is no ð in font cmss10!
-Missing character: There is no í in font cmss10!
-Missing character: There is no à in font cmss10!
-Missing character: There is no ò in font cmss10!
-Missing character: There is no è in font cmss10!
-Missing character: There is no â in font cmss10!
-Missing character: There is no à in font cmss10!
 
 Overfull \hbox (43.63654pt too wide) has occurred while \output is active
  [][]  \T2A/cmss/m/n/6 ([])  
@@ -1529,72 +1697,50 @@ Overfull \hbox (119.28323pt too wide) has occurred while \output is active
 [11
 
 ]
-Overfull \hbox (43.63654pt too wide) in paragraph at lines 223--223
+Overfull \hbox (43.63654pt too wide) in paragraph at lines 236--236
  [][]  \T2A/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (119.28323pt too wide) in paragraph at lines 223--223
+Overfull \hbox (119.28323pt too wide) in paragraph at lines 236--236
  [][][][]  
  []
 
 
-Overfull \hbox (43.63654pt too wide) has occurred while \output is active
- [][]  \T2A/cmss/m/n/6 ([])  
- []
+LaTeX Warning: Command \CYRA invalid in math mode on input line 236.
 
 
-Overfull \hbox (119.28323pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[12
-
-]
-Overfull \hbox (43.63654pt too wide) in paragraph at lines 238--238
- [][]  \T2A/cmss/m/n/6 ([])  
- []
+LaTeX Warning: Command \cyrl invalid in math mode on input line 236.
 
 
-Overfull \hbox (119.28323pt too wide) in paragraph at lines 238--238
- [][][][]  
- []
+LaTeX Warning: Command \cyrsftsn invalid in math mode on input line 236.
 
 
-LaTeX Warning: Command \CYRA invalid in math mode on input line 238.
+LaTeX Warning: Command \cyrt invalid in math mode on input line 236.
 
 
-LaTeX Warning: Command \cyrl invalid in math mode on input line 238.
+LaTeX Warning: Command \cyre invalid in math mode on input line 236.
 
 
-LaTeX Warning: Command \cyrsftsn invalid in math mode on input line 238.
+LaTeX Warning: Command \cyrr invalid in math mode on input line 236.
 
 
-LaTeX Warning: Command \cyrt invalid in math mode on input line 238.
+LaTeX Warning: Command \cyrn invalid in math mode on input line 236.
 
 
-LaTeX Warning: Command \cyre invalid in math mode on input line 238.
+LaTeX Warning: Command \cyra invalid in math mode on input line 236.
 
 
-LaTeX Warning: Command \cyrr invalid in math mode on input line 238.
+LaTeX Warning: Command \cyrt invalid in math mode on input line 236.
 
 
-LaTeX Warning: Command \cyrn invalid in math mode on input line 238.
+LaTeX Warning: Command \cyri invalid in math mode on input line 236.
 
 
-LaTeX Warning: Command \cyra invalid in math mode on input line 238.
+LaTeX Warning: Command \cyrv invalid in math mode on input line 236.
 
 
-LaTeX Warning: Command \cyrt invalid in math mode on input line 238.
-
-
-LaTeX Warning: Command \cyri invalid in math mode on input line 238.
-
-
-LaTeX Warning: Command \cyrv invalid in math mode on input line 238.
-
-
-LaTeX Warning: Command \cyra invalid in math mode on input line 238.
+LaTeX Warning: Command \cyra invalid in math mode on input line 236.
 
 Missing character: There is no À in font cmss10!
 Missing character: There is no ë in font cmss10!
@@ -1618,53 +1764,145 @@ Overfull \hbox (119.28323pt too wide) has occurred while \output is active
  [][][][]  
  []
 
-[13
+[12
 
 ]
-Overfull \hbox (43.63654pt too wide) in paragraph at lines 259--259
+Overfull \hbox (43.63654pt too wide) in paragraph at lines 250--250
  [][]  \T2A/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (119.28323pt too wide) in paragraph at lines 259--259
+Overfull \hbox (119.28323pt too wide) in paragraph at lines 250--250
  [][][][]  
  []
 
 
-LaTeX Warning: Command \CYRA invalid in math mode on input line 259.
+Overfull \hbox (43.63654pt too wide) has occurred while \output is active
+ [][]  \T2A/cmss/m/n/6 ([])  
+ []
 
 
-LaTeX Warning: Command \cyrl invalid in math mode on input line 259.
+Overfull \hbox (119.28323pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[13
+
+]
+Overfull \hbox (43.63654pt too wide) in paragraph at lines 265--265
+ [][]  \T2A/cmss/m/n/6 ([])  
+ []
 
 
-LaTeX Warning: Command \cyrsftsn invalid in math mode on input line 259.
+Overfull \hbox (119.28323pt too wide) in paragraph at lines 265--265
+ [][][][]  
+ []
 
 
-LaTeX Warning: Command \cyrt invalid in math mode on input line 259.
+LaTeX Warning: Command \CYRA invalid in math mode on input line 265.
 
 
-LaTeX Warning: Command \cyre invalid in math mode on input line 259.
+LaTeX Warning: Command \cyrl invalid in math mode on input line 265.
 
 
-LaTeX Warning: Command \cyrr invalid in math mode on input line 259.
+LaTeX Warning: Command \cyrsftsn invalid in math mode on input line 265.
 
 
-LaTeX Warning: Command \cyrn invalid in math mode on input line 259.
+LaTeX Warning: Command \cyrt invalid in math mode on input line 265.
 
 
-LaTeX Warning: Command \cyra invalid in math mode on input line 259.
+LaTeX Warning: Command \cyre invalid in math mode on input line 265.
 
 
-LaTeX Warning: Command \cyrt invalid in math mode on input line 259.
+LaTeX Warning: Command \cyrr invalid in math mode on input line 265.
 
 
-LaTeX Warning: Command \cyri invalid in math mode on input line 259.
+LaTeX Warning: Command \cyrn invalid in math mode on input line 265.
 
 
-LaTeX Warning: Command \cyrv invalid in math mode on input line 259.
+LaTeX Warning: Command \cyra invalid in math mode on input line 265.
 
 
-LaTeX Warning: Command \cyra invalid in math mode on input line 259.
+LaTeX Warning: Command \cyrt invalid in math mode on input line 265.
+
+
+LaTeX Warning: Command \cyri invalid in math mode on input line 265.
+
+
+LaTeX Warning: Command \cyrv invalid in math mode on input line 265.
+
+
+LaTeX Warning: Command \cyra invalid in math mode on input line 265.
+
+Missing character: There is no À in font cmss10!
+Missing character: There is no ë in font cmss10!
+Missing character: There is no ü in font cmss10!
+Missing character: There is no ò in font cmss10!
+Missing character: There is no å in font cmss10!
+Missing character: There is no ð in font cmss10!
+Missing character: There is no í in font cmss10!
+Missing character: There is no à in font cmss10!
+Missing character: There is no ò in font cmss10!
+Missing character: There is no è in font cmss10!
+Missing character: There is no â in font cmss10!
+Missing character: There is no à in font cmss10!
+
+Overfull \hbox (43.63654pt too wide) has occurred while \output is active
+ [][]  \T2A/cmss/m/n/6 ([])  
+ []
+
+
+Overfull \hbox (119.28323pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[14
+
+]
+Overfull \hbox (43.63654pt too wide) in paragraph at lines 286--286
+ [][]  \T2A/cmss/m/n/6 ([])  
+ []
+
+
+Overfull \hbox (119.28323pt too wide) in paragraph at lines 286--286
+ [][][][]  
+ []
+
+
+LaTeX Warning: Command \CYRA invalid in math mode on input line 286.
+
+
+LaTeX Warning: Command \cyrl invalid in math mode on input line 286.
+
+
+LaTeX Warning: Command \cyrsftsn invalid in math mode on input line 286.
+
+
+LaTeX Warning: Command \cyrt invalid in math mode on input line 286.
+
+
+LaTeX Warning: Command \cyre invalid in math mode on input line 286.
+
+
+LaTeX Warning: Command \cyrr invalid in math mode on input line 286.
+
+
+LaTeX Warning: Command \cyrn invalid in math mode on input line 286.
+
+
+LaTeX Warning: Command \cyra invalid in math mode on input line 286.
+
+
+LaTeX Warning: Command \cyrt invalid in math mode on input line 286.
+
+
+LaTeX Warning: Command \cyri invalid in math mode on input line 286.
+
+
+LaTeX Warning: Command \cyrv invalid in math mode on input line 286.
+
+
+LaTeX Warning: Command \cyra invalid in math mode on input line 286.
 
 Missing character: There is no À in font cmss10!
 Missing character: There is no ë in font cmss10!
@@ -1679,7 +1917,7 @@ Missing character: There is no è in font cmss10!
 Missing character: There is no â in font cmss10!
 Missing character: There is no à in font cmss10!
 LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
-259.
+286.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/ts1cmss.fd
 File: ts1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
@@ -1692,54 +1930,54 @@ Overfull \hbox (119.28323pt too wide) has occurred while \output is active
  [][][][]  
  []
 
-[14
+[15
 
 {/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 
-Overfull \hbox (43.63654pt too wide) in paragraph at lines 285--285
+Overfull \hbox (43.63654pt too wide) in paragraph at lines 312--312
  [][]  \T2A/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (119.28323pt too wide) in paragraph at lines 285--285
+Overfull \hbox (119.28323pt too wide) in paragraph at lines 312--312
  [][][][]  
  []
 
 
-LaTeX Warning: Command \CYRA invalid in math mode on input line 285.
+LaTeX Warning: Command \CYRA invalid in math mode on input line 312.
 
 
-LaTeX Warning: Command \cyrl invalid in math mode on input line 285.
+LaTeX Warning: Command \cyrl invalid in math mode on input line 312.
 
 
-LaTeX Warning: Command \cyrsftsn invalid in math mode on input line 285.
+LaTeX Warning: Command \cyrsftsn invalid in math mode on input line 312.
 
 
-LaTeX Warning: Command \cyrt invalid in math mode on input line 285.
+LaTeX Warning: Command \cyrt invalid in math mode on input line 312.
 
 
-LaTeX Warning: Command \cyre invalid in math mode on input line 285.
+LaTeX Warning: Command \cyre invalid in math mode on input line 312.
 
 
-LaTeX Warning: Command \cyrr invalid in math mode on input line 285.
+LaTeX Warning: Command \cyrr invalid in math mode on input line 312.
 
 
-LaTeX Warning: Command \cyrn invalid in math mode on input line 285.
+LaTeX Warning: Command \cyrn invalid in math mode on input line 312.
 
 
-LaTeX Warning: Command \cyra invalid in math mode on input line 285.
+LaTeX Warning: Command \cyra invalid in math mode on input line 312.
 
 
-LaTeX Warning: Command \cyrt invalid in math mode on input line 285.
+LaTeX Warning: Command \cyrt invalid in math mode on input line 312.
 
 
-LaTeX Warning: Command \cyri invalid in math mode on input line 285.
+LaTeX Warning: Command \cyri invalid in math mode on input line 312.
 
 
-LaTeX Warning: Command \cyrv invalid in math mode on input line 285.
+LaTeX Warning: Command \cyrv invalid in math mode on input line 312.
 
 
-LaTeX Warning: Command \cyra invalid in math mode on input line 285.
+LaTeX Warning: Command \cyra invalid in math mode on input line 312.
 
 Missing character: There is no À in font cmss10!
 Missing character: There is no ë in font cmss10!
@@ -1763,37 +2001,15 @@ Overfull \hbox (119.28323pt too wide) has occurred while \output is active
  [][][][]  
  []
 
-[15
-
-]
-Overfull \hbox (43.63654pt too wide) in paragraph at lines 315--315
- [][]  \T2A/cmss/m/n/6 ([])  
- []
-
-
-Overfull \hbox (119.28323pt too wide) in paragraph at lines 315--315
- [][][][]  
- []
-
-
-Overfull \hbox (43.63654pt too wide) has occurred while \output is active
- [][]  \T2A/cmss/m/n/6 ([])  
- []
-
-
-Overfull \hbox (119.28323pt too wide) has occurred while \output is active
- [][][][]  
- []
-
 [16
 
 ]
-Overfull \hbox (43.63654pt too wide) in paragraph at lines 326--326
+Overfull \hbox (43.63654pt too wide) in paragraph at lines 342--342
  [][]  \T2A/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (119.28323pt too wide) in paragraph at lines 326--326
+Overfull \hbox (119.28323pt too wide) in paragraph at lines 342--342
  [][][][]  
  []
 
@@ -1810,12 +2026,12 @@ Overfull \hbox (119.28323pt too wide) has occurred while \output is active
 [17
 
 ]
-Overfull \hbox (43.63654pt too wide) in paragraph at lines 352--352
+Overfull \hbox (43.63654pt too wide) in paragraph at lines 353--353
  [][]  \T2A/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (119.28323pt too wide) in paragraph at lines 352--352
+Overfull \hbox (119.28323pt too wide) in paragraph at lines 353--353
  [][][][]  
  []
 
@@ -1832,12 +2048,12 @@ Overfull \hbox (119.28323pt too wide) has occurred while \output is active
 [18
 
 ]
-Overfull \hbox (43.63654pt too wide) in paragraph at lines 377--377
+Overfull \hbox (43.63654pt too wide) in paragraph at lines 379--379
  [][]  \T2A/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (119.28323pt too wide) in paragraph at lines 377--377
+Overfull \hbox (119.28323pt too wide) in paragraph at lines 379--379
  [][][][]  
  []
 
@@ -1854,12 +2070,12 @@ Overfull \hbox (119.28323pt too wide) has occurred while \output is active
 [19
 
 ]
-Overfull \hbox (43.63654pt too wide) in paragraph at lines 390--390
+Overfull \hbox (43.63654pt too wide) in paragraph at lines 404--404
  [][]  \T2A/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (119.28323pt too wide) in paragraph at lines 390--390
+Overfull \hbox (119.28323pt too wide) in paragraph at lines 404--404
  [][][][]  
  []
 
@@ -1876,17 +2092,14 @@ Overfull \hbox (119.28323pt too wide) has occurred while \output is active
 [20
 
 ]
-Overfull \hbox (43.63654pt too wide) in paragraph at lines 405--405
+Overfull \hbox (43.63654pt too wide) in paragraph at lines 417--417
  [][]  \T2A/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (119.28323pt too wide) in paragraph at lines 405--405
+Overfull \hbox (119.28323pt too wide) in paragraph at lines 417--417
  [][][][]  
  []
-
-
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 405.
 
 
 Overfull \hbox (43.63654pt too wide) has occurred while \output is active
@@ -1901,14 +2114,17 @@ Overfull \hbox (119.28323pt too wide) has occurred while \output is active
 [21
 
 ]
-Overfull \hbox (43.63654pt too wide) in paragraph at lines 437--437
+Overfull \hbox (43.63654pt too wide) in paragraph at lines 432--432
  [][]  \T2A/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (119.28323pt too wide) in paragraph at lines 437--437
+Overfull \hbox (119.28323pt too wide) in paragraph at lines 432--432
  [][][][]  
  []
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 432.
 
 
 Overfull \hbox (43.63654pt too wide) has occurred while \output is active
@@ -1923,12 +2139,12 @@ Overfull \hbox (119.28323pt too wide) has occurred while \output is active
 [22
 
 ]
-Overfull \hbox (43.63654pt too wide) in paragraph at lines 460--460
+Overfull \hbox (43.63654pt too wide) in paragraph at lines 464--464
  [][]  \T2A/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (119.28323pt too wide) in paragraph at lines 460--460
+Overfull \hbox (119.28323pt too wide) in paragraph at lines 464--464
  [][][][]  
  []
 
@@ -1945,12 +2161,12 @@ Overfull \hbox (119.28323pt too wide) has occurred while \output is active
 [23
 
 ]
-Overfull \hbox (43.63654pt too wide) in paragraph at lines 490--490
+Overfull \hbox (43.63654pt too wide) in paragraph at lines 487--487
  [][]  \T2A/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (119.28323pt too wide) in paragraph at lines 490--490
+Overfull \hbox (119.28323pt too wide) in paragraph at lines 487--487
  [][][][]  
  []
 
@@ -1967,12 +2183,12 @@ Overfull \hbox (119.28323pt too wide) has occurred while \output is active
 [24
 
 ]
-Overfull \hbox (43.63654pt too wide) in paragraph at lines 503--503
+Overfull \hbox (43.63654pt too wide) in paragraph at lines 517--517
  [][]  \T2A/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (119.28323pt too wide) in paragraph at lines 503--503
+Overfull \hbox (119.28323pt too wide) in paragraph at lines 517--517
  [][][][]  
  []
 
@@ -1989,12 +2205,12 @@ Overfull \hbox (119.28323pt too wide) has occurred while \output is active
 [25
 
 ]
-Overfull \hbox (43.63654pt too wide) in paragraph at lines 518--518
+Overfull \hbox (43.63654pt too wide) in paragraph at lines 530--530
  [][]  \T2A/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (119.28323pt too wide) in paragraph at lines 518--518
+Overfull \hbox (119.28323pt too wide) in paragraph at lines 530--530
  [][][][]  
  []
 
@@ -2011,12 +2227,12 @@ Overfull \hbox (119.28323pt too wide) has occurred while \output is active
 [26
 
 ]
-Overfull \hbox (43.63654pt too wide) in paragraph at lines 531--531
+Overfull \hbox (43.63654pt too wide) in paragraph at lines 545--545
  [][]  \T2A/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (119.28323pt too wide) in paragraph at lines 531--531
+Overfull \hbox (119.28323pt too wide) in paragraph at lines 545--545
  [][][][]  
  []
 
@@ -2033,12 +2249,12 @@ Overfull \hbox (119.28323pt too wide) has occurred while \output is active
 [27
 
 ]
-Overfull \hbox (43.63654pt too wide) in paragraph at lines 560--560
+Overfull \hbox (43.63654pt too wide) in paragraph at lines 558--558
  [][]  \T2A/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (119.28323pt too wide) in paragraph at lines 560--560
+Overfull \hbox (119.28323pt too wide) in paragraph at lines 558--558
  [][][][]  
  []
 
@@ -2055,12 +2271,12 @@ Overfull \hbox (119.28323pt too wide) has occurred while \output is active
 [28
 
 ]
-Overfull \hbox (43.63654pt too wide) in paragraph at lines 573--573
+Overfull \hbox (43.63654pt too wide) in paragraph at lines 587--587
  [][]  \T2A/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (119.28323pt too wide) in paragraph at lines 573--573
+Overfull \hbox (119.28323pt too wide) in paragraph at lines 587--587
  [][][][]  
  []
 
@@ -2077,12 +2293,12 @@ Overfull \hbox (119.28323pt too wide) has occurred while \output is active
 [29
 
 ]
-Overfull \hbox (43.63654pt too wide) in paragraph at lines 589--589
+Overfull \hbox (43.63654pt too wide) in paragraph at lines 600--600
  [][]  \T2A/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (119.28323pt too wide) in paragraph at lines 589--589
+Overfull \hbox (119.28323pt too wide) in paragraph at lines 600--600
  [][][][]  
  []
 
@@ -2099,12 +2315,12 @@ Overfull \hbox (119.28323pt too wide) has occurred while \output is active
 [30
 
 ]
-Overfull \hbox (43.63654pt too wide) in paragraph at lines 599--599
+Overfull \hbox (43.63654pt too wide) in paragraph at lines 616--616
  [][]  \T2A/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (119.28323pt too wide) in paragraph at lines 599--599
+Overfull \hbox (119.28323pt too wide) in paragraph at lines 616--616
  [][][][]  
  []
 
@@ -2121,12 +2337,12 @@ Overfull \hbox (119.28323pt too wide) has occurred while \output is active
 [31
 
 ]
-Overfull \hbox (43.63654pt too wide) in paragraph at lines 642--642
+Overfull \hbox (43.63654pt too wide) in paragraph at lines 626--626
  [][]  \T2A/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (119.28323pt too wide) in paragraph at lines 642--642
+Overfull \hbox (119.28323pt too wide) in paragraph at lines 626--626
  [][][][]  
  []
 
@@ -2143,12 +2359,12 @@ Overfull \hbox (119.28323pt too wide) has occurred while \output is active
 [32
 
 ]
-Overfull \hbox (43.63654pt too wide) in paragraph at lines 666--666
+Overfull \hbox (43.63654pt too wide) in paragraph at lines 669--669
  [][]  \T2A/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (119.28323pt too wide) in paragraph at lines 666--666
+Overfull \hbox (119.28323pt too wide) in paragraph at lines 669--669
  [][][][]  
  []
 
@@ -2165,12 +2381,12 @@ Overfull \hbox (119.28323pt too wide) has occurred while \output is active
 [33
 
 ]
-Overfull \hbox (43.63654pt too wide) in paragraph at lines 676--676
+Overfull \hbox (43.63654pt too wide) in paragraph at lines 693--693
  [][]  \T2A/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (119.28323pt too wide) in paragraph at lines 676--676
+Overfull \hbox (119.28323pt too wide) in paragraph at lines 693--693
  [][][][]  
  []
 
@@ -2187,12 +2403,12 @@ Overfull \hbox (119.28323pt too wide) has occurred while \output is active
 [34
 
 ]
-Overfull \hbox (43.63654pt too wide) in paragraph at lines 686--686
+Overfull \hbox (43.63654pt too wide) in paragraph at lines 703--703
  [][]  \T2A/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (119.28323pt too wide) in paragraph at lines 686--686
+Overfull \hbox (119.28323pt too wide) in paragraph at lines 703--703
  [][][][]  
  []
 
@@ -2209,12 +2425,12 @@ Overfull \hbox (119.28323pt too wide) has occurred while \output is active
 [35
 
 ]
-Overfull \hbox (43.63654pt too wide) in paragraph at lines 723--723
+Overfull \hbox (43.63654pt too wide) in paragraph at lines 713--713
  [][]  \T2A/cmss/m/n/6 ([])  
  []
 
 
-Overfull \hbox (119.28323pt too wide) in paragraph at lines 723--723
+Overfull \hbox (119.28323pt too wide) in paragraph at lines 713--713
  [][][][]  
  []
 
@@ -2230,7 +2446,17 @@ Overfull \hbox (119.28323pt too wide) has occurred while \output is active
 
 [36
 
- </usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>]
+]
+Overfull \hbox (43.63654pt too wide) in paragraph at lines 750--750
+ [][]  \T2A/cmss/m/n/6 ([])  
+ []
+
+
+Overfull \hbox (119.28323pt too wide) in paragraph at lines 750--750
+ [][][][]  
+ []
+
+
 Overfull \hbox (43.63654pt too wide) has occurred while \output is active
  [][]  \T2A/cmss/m/n/6 ([])  
  []
@@ -2241,6 +2467,18 @@ Overfull \hbox (119.28323pt too wide) has occurred while \output is active
  []
 
 [37
+
+ </usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>]
+Overfull \hbox (43.63654pt too wide) has occurred while \output is active
+ [][]  \T2A/cmss/m/n/6 ([])  
+ []
+
+
+Overfull \hbox (119.28323pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[38
 
 
 ]
@@ -2262,10 +2500,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 25329 strings out of 474116
- 487624 string characters out of 5743682
+ 25333 strings out of 474116
+ 487659 string characters out of 5743682
  1945187 words of memory out of 5000000
- 47076 multiletter control sequences out of 15000+600000
+ 47078 multiletter control sequences out of 15000+600000
  586695 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,123p,851b,578s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2289,10 +2527,10 @@ ve/2024/texmf-dist/fonts/type1/public/cm-super/sfss0900.pfb></usr/local/texlive
 4/texmf-dist/fonts/type1/public/cm-super/sfss1440.pfb></usr/local/texlive/2024/
 texmf-dist/fonts/type1/public/cm-super/sfsx0800.pfb></usr/local/texlive/2024/te
 xmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb>
-Output written on main.pdf (37 pages, 356732 bytes).
+Output written on main.pdf (38 pages, 361415 bytes).
 PDF statistics:
- 1204 PDF objects out of 1440 (max. 8388607)
- 1060 compressed objects within 11 object streams
- 81 named destinations out of 1000 (max. 500000)
+ 1231 PDF objects out of 1440 (max. 8388607)
+ 1085 compressed objects within 11 object streams
+ 83 named destinations out of 1000 (max. 500000)
  85 words of extra memory for PDF output out of 10000 (max. 10000000)
 

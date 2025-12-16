@@ -63,6 +63,33 @@ Q_i=v\frac{S_i-S^{*}}{S^{-}-S^{*}}+(1-v)\frac{R_i-R^{*}}{R^{-}-R^{*}}.
 \]
 \end{frame}
 
+\begin{frame}
+\textbf{Классический VIKOR -- Проверка компромиссного решения:}
+
+
+\textbf{Параметр компромисса \(v\)}:
+
+Параметр \(v \in [0,1]\) определяет баланс между стратегией
+\textit{максимального группового выигрыша} (\(S_i\)) и
+\textit{минимизации индивидуального риска} (\(R_i\)).
+
+\[
+v \rightarrow 1 \;\Rightarrow\; приоритет суммарного выигрыша (S),
+\qquad
+v \rightarrow 0 \;\Rightarrow\; приоритет наихудшего критерия (R).
+\]
+\textbf{Условие C1 (Acceptable Advantage):}
+\[
+Q(A^{(2)}) - Q(A^{(1)}) \ge \frac{1}{m-1},
+\]
+где $A^{(1)}$ и $A^{(2)}$ — альтернативы с первым и вторым местом по $Q$.
+
+\textbf{Условие C2 (Acceptable Stability):}
+\[
+A^{(1)} = \arg\min_i S_i \quad \text{или} \quad A^{(1)} = \arg\min_i R_i.
+\]
+\end{frame}
+
 % Slide: Применимость
 \begin{frame}{Области применимости и ограничения}
 \begin{itemize}
