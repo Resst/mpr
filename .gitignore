@@ -75,3 +75,6 @@ Call for chapters MLABSED-2017.tex
 *.tuc
 *.doc
 *.docx
+
+.venv
+*.egg-info
