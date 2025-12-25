@@ -257,7 +257,6 @@ class AlternativeGenerator:
         Генерация значений для абсолютных критериев с учетом распределения.
         """
         if self.abs_distribution == "uniform":
-            return np.round(
             base_values = np.round(
                 np.random.uniform(
                     criterion.min_value,
@@ -303,6 +302,7 @@ class AlternativeGenerator:
                     criterion.max_value
                 )
             return result
+        
         return base_values
 
 
