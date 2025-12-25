@@ -618,9 +618,7 @@ class AlternativeGenerator:
                 group_names = [criterion.name for criterion in group]
                 print(f"Группа {i} :", group_names)
             component_counter += 1
-
-
-            
+                
     def export_to_json(self, filename: str = "alternatives.json"):
         """
         Экспорт данных в JSON формате для нечетких чисел.
